@@ -1,5 +1,17 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --color-white: #ffffff;
+  --color-black: #010101;
+  --color-green: #05ed05;
+  --color-red: #f44336;
+  --color-primary-text: #212121;
+  --color-secondary-text: #ffffff;
+  --color-thead: #20b2aa;
+  --color-bg: #dddddd;
+  --color-border: #a9a9a9;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +19,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #8ed9ff, #5165ff);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
